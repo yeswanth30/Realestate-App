@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logoo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logoo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Realestateadmin"
+        tools:targetApi="31">
+        <activity
+            android:name=".FlashScreenActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Realestateadmin">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".LoginActivity"/>
+        <activity android:name=".SigninActivity"/>
+        <activity android:name=".Addcity_Activity"/>
+        <activity android:name=".EditProfileActivity"/>
+        <activity android:name=".BrokerDetailsActivity"/>
+        <activity android:name=".UserDetails_Activity"/>
+        <activity android:name=".VerifiedBrokerDetails_Activity"/>
+<activity android:name=".AddProperty_Activity"/>
+        <activity android:name=".Allusers_Activity"/>
+        <activity android:name=".Addroomtype_Activity"/>
+        <activity android:name=".AddSaleType_Activity"/>
+        <activity android:name=".UserEditProfile_Activity"/>
+        <activity android:name=".PropertyMoreDetails_Activity"/>
+        <activity android:name=".EnquiredProperties_Activity"/>
+        <activity android:name=".Payments_Activity"/>
+
+    </application>
+
+ </manifest>
+
+

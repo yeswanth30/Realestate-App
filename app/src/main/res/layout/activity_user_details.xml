@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:padding="0dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ooooooooooo">
+
+        <RelativeLayout
+            android:id="@+id/first"
+            android:layout_width="match_parent"
+            android:padding="16dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/layout0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:id="@+id/back"
+                        android:layout_height="20dp"
+                        android:src="@drawable/baseline_arrow_back_ios_242"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginEnd="10dp" />
+                    <TextView
+                        android:id="@+id/usernameTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Edit User"
+                        android:layout_marginLeft="85dp"
+                        android:textSize="25sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/leftImageView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="80dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/authorrr" />
+
+
+        <ImageView
+            android:id="@+id/verificationStatusImageView"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/leftImageView"
+            android:layout_marginTop="-3dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/editing" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/leftImageView"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/edit"
+            android:layout_width="25dp"
+            android:layout_height="22dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="19dp"
+            android:src="@drawable/editing" />
+
+
+        <RelativeLayout
+            android:id="@+id/textLayout22"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/leftImageView"
+            android:layout_marginTop="0dp">
+<!--            <TextView-->
+<!--                android:id="@+id/usernameTextView"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:drawableStart="@drawable/baseline_person_24"-->
+<!--                android:drawablePadding="10dp"-->
+<!--                android:textSize="20dp"-->
+<!--                android:text="    Username      "-->
+<!--                android:padding="20dp"-->
+<!--                android:textColor="#B2B7C6"-->
+<!--                android:textColorHint="#808080" />-->
+
+            <TextView
+                android:id="@+id/lastnametextview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:drawableStart="@drawable/baseline_person_pin_24"
+                android:drawablePadding="10dp"
+                android:textSize="20dp"
+                android:text="    Lastname      "
+                android:padding="20dp"
+                android:textColorHint="#808080" />
+
+            <TextView
+                android:id="@+id/bioTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:drawableStart="@drawable/baseline_face_24"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="-20dp"
+
+                android:textSize="20dp"
+                android:layout_below="@+id/lastnametextview"
+                android:text="    Bio      "
+                android:padding="20dp"
+                android:textColorHint="#808080" />
+
+            <TextView
+                android:id="@+id/Phonetextview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="-20dp"
+
+                android:drawableStart="@drawable/baseline_local_phone_24"
+                android:text="Phonenumber"
+                android:layout_below="@+id/bioTextView"
+
+                android:drawablePadding="10dp"
+                android:textSize="20dp"
+                android:padding="20dp"
+                android:textColorHint="#808080"
+                />
+
+            <TextView
+                android:id="@+id/emailTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Phonetextview"
+                android:layout_marginTop="-20dp"
+
+                android:textSize="20dp"
+                android:drawablePadding="10dp"
+
+                android:layout_marginStart="10dp"
+                android:drawableStart="@drawable/baseline_email_24"
+                android:text="Email"
+                android:padding="20dp"
+                android:textColorHint="#808080" />
+            <TextView
+                android:id="@+id/cityTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/emailTextView"
+                android:textSize="20dp"
+                android:layout_marginTop="-20dp"
+
+                android:drawablePadding="10dp"
+
+                android:layout_marginStart="10dp"
+                android:drawableStart="@drawable/baseline_location_city_24"
+                android:text="City"
+                android:padding="20dp"
+                android:textColorHint="#808080" />
+
+            <TextView
+                android:id="@+id/addressTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cityTextView"
+                android:textSize="20dp"
+                android:drawablePadding="10dp"
+
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="-20dp"
+                android:drawableStart="@drawable/baseline_home_24"
+                android:text="Address"
+                android:padding="20dp"
+                android:textColorHint="#808080" />
+
+        </RelativeLayout>
+
+
+
+</RelativeLayout>
+</RelativeLayout>
